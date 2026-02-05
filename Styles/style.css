@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #1A0B2E;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem 12.5rem;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .btn {
+    background: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
+    padding: 0.75rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 8rem;
+}
+
+.navbar .hamburger-menu {
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width:576px) {
+
+    .navbar {
+        padding: 1.25rem;
+    }
+
+    .navbar ul,
+    .navbar .btn {
+        display: none;
+    }
+
+    .navbar .hamburger-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:997px) {
+    .navbar {
+        padding: 1.25rem;
+    }
+}
