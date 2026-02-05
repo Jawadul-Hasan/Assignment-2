@@ -10,6 +10,19 @@
     background-color: #1A0B2E;
 }
 
+/* Sheared style */
+
+.primary-btn {
+    background: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
+    padding: 0.75rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 8rem;
+    cursor: pointer;
+}
+
+/* navbar styles */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -34,14 +47,8 @@
 .navbar a {
     text-decoration: none;
     color: white;
-}
-
-.navbar .btn {
-    background: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
-    padding: 0.75rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 8rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .navbar .hamburger-menu {
@@ -50,24 +57,169 @@
     height: 24px;
 }
 
-@media screen and (max-width:576px) {
+/* hero-banner style */
 
+.hero-banner .hero-img {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    text-align: center;
+}
+
+.hero-img .hero-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img .hero-circle {
+    position: absolute;
+    width: 30%;
+    max-width: 340px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-img .microphone {
+    position: absolute;
+    width: 10%;
+    max-width: 150px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-img .badge {
+    position: absolute;
+    width: 10%;
+    max-width: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    top: 5%;
+    left: 55%;
+    color: black;
+    border: none;
+    border-radius: 8rem;
+    background-color: #00FF88;
+}
+
+
+.hero-content {
+    color: white;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.hero-content {
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.hero-content .hero-btn {
+    margin-top: 1.5rem;
+}
+
+.hero-btn .message-btn {
+    padding: 0.75rem 1.25rem;
+    color: #00FF88;
+    background-color: transparent;
+    border: 1px solid #00FF88;
+    border-radius: 8rem;
+}
+
+.message-btn img {
+    gap: 0.5px;
+    vertical-align: center;
+}
+
+/* For small device */
+
+@media screen and (max-width:576px) {
     .navbar {
         padding: 1.25rem;
     }
 
     .navbar ul,
-    .navbar .btn {
+    .navbar .primary-btn {
         display: none;
     }
 
     .navbar .hamburger-menu {
         display: block;
     }
+
+    .hero-banner .hero-img {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        color: white;
+        text-align: center;
+    }
+
+    .hero-img .hero-circle {
+        width: 40%;
+        max-width: 520px;
+        top: 37%;
+    }
+
+    .hero-img .microphone {
+        width: 12%;
+        max-width: 100px;
+        top: 37%;
+    }
+
+    .hero-img .badge {
+        width: 10%;
+        max-width: 3rem;
+        top: 5%;
+        left: 55%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content p {
+        width: 90%;
+        max-width: 25rem;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1.25rem;
+    }
 }
 
-@media screen and (min-width:577px) and (max-width:997px) {
+/* For medium device */
+
+@media screen and (min-width:576px) and (max-width:997px) {
     .navbar {
         padding: 1.25rem;
+    }
+
+    .hero-img .hero-circle {
+        width: 23%;
+        max-width: 240px;
+        top: 40%;
+    }
+
+    .hero-img .microphone {
+        width: 10%;
+        max-width: 120px;
+        top: 40%;
+    }
+
+    .hero-img .badge {
+        width: 10%;
+        max-width: 3rem;
+        top: 22%;
+        left: 53%;
     }
 }
