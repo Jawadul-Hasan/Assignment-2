@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+hr{
+    background-color: #FFFFFF;
+}
+
 /* navbar styles */
 
 .navbar {
@@ -104,10 +108,13 @@
     background-color: #00FF88;
 }
 
-
 .hero-content {
     color: white;
     text-align: center;
+}
+
+.hero-content h1{
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -131,11 +138,47 @@
     background-color: transparent;
     border: 1px solid #00FF88;
     border-radius: 8rem;
+    cursor: pointer;
 }
 
 .message-btn img {
     gap: 0.5px;
     vertical-align: center;
+}
+
+.about-content {
+    width: 52%;
+    max-width: 75rem;
+    /* padding-top: 3.012rem; */
+    margin: 0 auto;
+    margin-top: 3.125rem;
+    color: white;
+    text-align: center;
+}
+
+.about-content h1 {
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.about{
+    max-width: 1600;
+    margin: 0 auto;
+    padding-top: 3.125rem;
+}
+ 
+.achievements{
+    color: #00FF88;
+    margin-top: 10rem ;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 7.5rem;
 }
 
 /* For small device */
